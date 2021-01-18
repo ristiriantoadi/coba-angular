@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "sastra-minggu-cerpen-pemuatan-angular-laravel"
+  "defaultProject": "sastra-minggu-cerpen-pemuatan-angular-laravel",
+  "cli": {
+    "analytics": "dbfbd104-a1b5-4442-8a44-b2e7717f6b17"
+  }
 }
