@@ -13,11 +13,43 @@ export class EmployeeComponent implements OnInit {
   constructor(private employeeService:EmployeeService) { }
 
   ngOnInit(): void {
-    this.employeeService.getEmployees()
+    this.employeeService.getTodos()
     .subscribe(data=>{
-      this.employees = data
-      console.log(this.employees)
+      console.log(data)
     })
+    let data = {
+      userId: 10,
+      title: "delectus aut autem",
+      completed: false
+    }
+    this.employeeService.postTodo(data).subscribe(data=>{
+        // this.employees = data
+        console.log(data)
+      },
+      error=>{
+        console.log(error)
+      })
+
+
+
+    // this.employeeService.getEmployees()
+    // .subscribe(data=>{
+    //   this.employees = data
+    //   console.log(this.employees)
+    // },
+    // error=>{
+    //   console.log(error)
+    // })
+  
+    // this.employeeService.postRequest({"data":"123"}).subscribe(data=>{
+    //   this.employees = data
+    //   console.log(this.employees)
+    // },
+    // error=>{
+    //   console.log(error)
+    // })
+    
+
   }
 
 }
