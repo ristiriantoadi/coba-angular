@@ -1,1 +1,6 @@
-<p>user works!</p>
+<ul>
+    <li *ngFor="let user of users">
+        <!-- <a (click)="onClick(user)">{{user.name}}</a> -->
+        <a [routerLink]="['/user',user.id]">{{user.name}}</a>
+    </li>
+</ul>

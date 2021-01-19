@@ -10,7 +10,10 @@ import { EmployeeComponent } from './employee/employee.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { GuestComponent } from './guest/guest.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { UserContactComponent } from './user-contact/user-contact.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AdminComponent,
     UserComponent,
     GuestComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UserDetailComponent,
+    UserInfoComponent,
+    UserContactComponent
   ],
   imports: [
     BrowserModule,
