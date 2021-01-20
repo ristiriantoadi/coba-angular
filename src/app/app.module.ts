@@ -13,7 +13,9 @@ import { GuestComponent } from './guest/guest.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserInfoComponent } from './user-info/user-info.component';
-import { UserContactComponent } from './user-contact/user-contact.component'
+import { UserContactComponent } from './user-contact/user-contact.component';
+import { LoginComponent } from './login/login.component';
+import { ProtectedComponent } from './protected/protected.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { UserContactComponent } from './user-contact/user-contact.component'
     PageNotFoundComponent,
     UserDetailComponent,
     UserInfoComponent,
-    UserContactComponent
+    UserContactComponent,
+    LoginComponent,
+    ProtectedComponent
   ],
   imports: [
     BrowserModule,
